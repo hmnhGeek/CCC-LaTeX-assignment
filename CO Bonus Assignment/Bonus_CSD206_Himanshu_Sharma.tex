@@ -1,0 +1,102 @@
+\documentclass{article}
+\title{\texttt{A Computer Organisation article on \\ \Huge How Computers Work}}
+\author{\texttt{{\bf By}: Himanshu Sharma  \hspace{10mm} {\bf Roll Number}: 1610110149 \hspace{10mm} {\bf ECE 3rd Yr.}}}
+\date{}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+
+\definecolor{MyBlue}{rgb}{0.1,0.1,1}
+\definecolor{lightBlue}{rgb}{0, 0.5, 1}
+
+\usepackage{titlesec}
+\titleformat*{\section}{\color{MyBlue}\fontfamily{lmtt}\selectfont\LARGE}
+\titleformat*{\subsection}{\color{lightBlue}\fontfamily{lmtt}\selectfont\Large}
+
+\begin{document}
+\fontfamily{qag}
+\selectfont
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction}
+Computers have become an important part of our life in the modern era. From scientific endeavour to the personal computer revolution, computers are found everywhere. Computers, as we see them today are a result of a prcoess that continues even today to make them better day by day. Early computers were just designed to make complex computations easy. In that sense, a simple calculator is also a computer. But today's computers can do even more. With deveopment in the VLSI technology, today's computer can do what not, it can stream videos, music and even high end quality games. Considering such an important machine, we should atleast know how it functions, and this is what this article aims to provide the reader. \par Every computer is made up of various electronic components that work together on a single hardware. The first generation of computers include \textit{ENIAC}. It was the first general purpose digital computer that was designed to solve complex computational problems. It occupied large space and had a weight of 30 tons. It consumed 140 kilowatts of power when it used to run since it heavily depended on the vacuum tubes. The next computer in the sequence of history was the \textit{VON NEUMANN MACHINE}. The Von Neumann machine provided an additional benefit of the {\bf stored program concept}. Imagine this, the ENIAC if shuts down due to some power issues while it is still operating, it would loose all the data with which it started. The Von Neumann machine stores this data beforehand so that feeding it back to the machine manually is not required. In 1946, Neumann started designing another computer which used stored program concept, called the \textit{IAS}. The IAS computer had the following features.
+\begin{enumerate}
+\item ALU - Arithmetic and Logic Unit
+\item Control Unit
+\item Main Memory
+\item Input/Output (I/O)
+\end{enumerate}
+This basic set of features is followed even today in our computers. Thus almost all the computers today can be technically called the Von Neumann Machines. 
+\par Computers evolve based on the technology and thus give rise to a classification based on the generation of the technology used.
+\begin{enumerate}
+\item First Generation - Used vacuum tubes 
+\item Second Generation - Used transistors
+\item Third Generation - Used Small and Medium Scale Integration
+\item Fourth Generation - Used Large Scaled Integration
+\item Fifth Generation - Very Large Scale Integration
+\item Sixth Generation - Ultra Large Scale Integration
+\end{enumerate}
+From third generation onwards, the computers saw the use of integrated circuits. An example is the \textit{IBM System/360} and \textit{DEC PDP-8}. Microelectronics is the main role player in the computer industry. It opened doors for more complex designs of the computers. This field of electronics made possible a transition from a concept to design - the Microprocessor. The entire computer industry cannot imagine computers without this now. All applications today in which computer finds itself, like image processing, simulation, computer vision, speech recognition, signal processing, etc are made possible by this microprocessor only. \par We will now see how a machine with so many features like this actually works. We will see this both on logical and hardware front in this article. 
+
+\newpage
+\section{Computer Functions and Components}
+As already discussed, a computer consists of a CPU, control unit, I/O and main memory. These four basic elements of the computer are connected in a fashion such that they are able to execute set of instructions called a program. Executing a program is the main function of any computer system. And this can be achieved in two ways - by hardware or by software. When we say that a computer is programmed via hardware, what we actually mean is that the set of instructions are solved using physical hardware devices like flip-flops, latches, etc which are designed by the designer himself. The advantage of a computer working like this is that the instructions are executed fast but the problem is that changing a program can be cumbersome. Imagine changing dozens of wires and switches just to change a set of parameters in the program. We can solve this problem by  using software programming which does not use any hardware but then we are at a loss of speed. It must be noted that both hardware and software mode of programming will give the same results but their way of working and execution speeds are different.
+\par When it comes to reporting the results of the execution, some sort of interface is required. And this is where an I/O comes into the picture. There must also be some place where these results could be stored in the system and that's where the main memory plays its role. A control unit on the other hand decides what data will flow to the CPU and the CPU performs the execution. Most of the times it is the CPU and the main memory which have the interaction with each other. A CPU frequently requests data from the main memory and dumps data into it after execution and therefore to meet these demands, two internal registers called the \textbf{Memory Buffer Register} (MBR) and the \textbf{Memory Address Register} (MAR) are used by the CPU which contain the data that is to be written into the memory or data which needs to be read from the memory. Similarly, an \textbf{I/O Address Register} (I/OAR) is required which addresses the I/O device which is right now being serviced by the processor.
+
+\subsection{The execution of a program}
+The basic function of a computer is to execute a program. This is done in two macro steps, basically, a \textit{fetch} and an \textit{execute}. These macro-steps are followed like a cycle for each statement in a program. In the instruction fetch, the value of the processor register, \textbf{program counter} (PC) is loaded into the memory which points to the location of the instruction. After the instruction is loaded, the value of the program counter is incremented by 1. The basic procedure followed is,
+\begin{enumerate}
+\item \textbf{if} - Instruction Fetch - Read the instruction from the memory and load it into the processor.
+\item \textbf{iod} - Instruction Operand Decoding - Decide the type of operation to be performed.
+\item \textbf{oac} - Operand Address Calculation - Find the location of operand from the memory, if required.
+\item \textbf{of} - Operand Fetch - Fetch the operand once the location is finalized.
+\item \textbf{do} - Do Operation - Once the operation is loaded, perform the desired operation.
+\item \textbf{os} - Operation Store - Write the result into memory.
+\end{enumerate}
+If there are interrupts while some procedure is under way, then an \textbf{Interrupt Service Routine} (ISR) is initiated which ranks the interrupt based on its priority. Interrupts occur mainly because different I/O device request processor attention at any time whenever they require it and the only way to handle is the ISR.
+\newpage
+
+\subsection{The System Bus}
+The system bus is an important part of any computer system because it acts like a highway for different components of the system. A comon analogy is that the system bus is like an interstate highway with the components being the states and the signal flow on the wires like traffic. The system bus is not the only kind of the bus possible, other buses being the \textit{expansion bus} and the \textit{high-speed bus}. Main memory, CPU and the Cache are connected to each other via system bus. Any data that flows between any two of them needs to use the system bus.
+
+\section{The Cache Memory}
+We will now see an important part of a computer system called the Cache Memory. After studying how the execution of program actually happens briefly, we are here at discussing this important part of the computer system. Cache memory is a combination of access time of high speed, less expensive memory and memory with large capacity with less speed. For the processor, cache is the favourite location to look for something. If found, the data is directly transferred to it and if not found, the main memory transfer to the cache memory is requested. The main memory contains $2^{n}$ addressable words with each word having $n$ bit address. For mapping puposes to the cache, these $2^{n}$ words are divided into $K$ blocks such that there are $\displaystyle M = \frac{2^{n}}{K}$ sets of lines in each block. The cache conatins $m$ blocks where $m << M$, where $m$ is called \textit{lines}. \par There are different mapping functions wherein, the data in the main memory is mapped to cache. These include,
+\begin{enumerate}
+\item Direct Mapping
+\item Associative Mapping
+\item Set-associative mapping
+\end{enumerate}
+In direct mapping, the block of main memory is directly mapped to the cache lines. Associative mapping overcomes the disadvantage of direct mapping by permitting each main memory block to be loaded into any line of the cache.
+
+\section{The Internal Memory}
+Internal memory is that part of system's memory which can store small chunks of data when the system is running. This memory is able to store the data only when power is supplied to the system. The two most popular types of internal memories are \textbf{Random Access Memory} (RAM) and \textbf{Read Only Memory} (ROM). \par We should note one thing, the cache is used for data transfer from internal memory to the processor. In this way, the data which is actually stored in the internal memory, gets transferred to the processor via temporary memory called cache memory.
+
+\subsection{Semiconductor Main Memory}
+As the name suggests, the semiconductor main memory is the memory made up of semiconductor devices. The basic element of this type of memory is called the \textit{cell}. A single cell has two stable states, either a 0 or 1 and they can be written into or read from. Data can be written or read from the cells using control signals. A semiconductor main memory is also sometimes referred to as a core.
+
+\newpage
+\subsubsection{The Dynamic RAM (DRAM)}
+The dynamic RAM is made up of electonic devices like capacitors (mainly) and capacitors which are governed by the laws of analog electronics have a tendency to leak charge with time given by the following equation,
+\begin{center}
+$\displaystyle q(t) = q_{o}(1-e^{-t/\tau})$
+\end{center}
+where, $\tau$ is the time constant measured in seconds. The word \textit{dynamic} used here refers to this decay of charge tendency in the capacitor. A high voltage is represented by logic 1, and a low voltage is represented by logic 0. Logic 1 takes in all the voltages above a threshold voltage and logic 0 takes in all the voltages into its consideration which have a value lower than the threshold voltage. Although we are storing 1 and 0, but DRAM is in itself an analog device because it uses capacitors.
+
+\subsubsection{The Static RAM (SRAM)}
+The static RAM on the other hand is digital in nature because it uses digital devices like flip-flops. It will also hold the data as long as power is supplied to it.
+
+\subsubsection{Read Only Memory (ROM)}
+The ROM, as the name suggests, is a memory device that can be only used to read from and its contents cannot be altered. It does not require any power source to maintain the data. Designing the ROM is a part of fabrication process based on hardwire concept and the data is emmbedded into the ROM at the time of manufacturing process itself. There are three types of ROMs.
+\begin{enumerate}
+\item Programmable ROM (PROM)
+\item Erasable PROM (EPROM)
+\item Electrically EPROM (EEPROM)
+\end{enumerate}
+A ROM is an essential part of the computer system because it contains that type of information about the system which should not be altered or played with, like the bootup information which makes possible the system bootup.
+
+\section{The CPU}
+The CPU is that popular part of any computer system that enables it to actually work. When we say how a computer works, we are unconsciously thinking of CPU itself only. The CPU functions by executing machine instructions.
+
+\end{document}

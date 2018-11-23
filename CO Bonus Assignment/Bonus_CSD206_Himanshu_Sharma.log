@@ -1,0 +1,215 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.9.3)  23 NOV 2018 19:01
+entering extended mode
+**./Bonus_CSD206_Himanshu_Sharma.tex
+(Bonus_CSD206_Himanshu_Sharma.tex
+LaTeX2e <2018-04-01> patch level 5
+(/home/himanshu/.miktex/texmfs/install/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/home/himanshu/.miktex/texmfs/install/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/home/himanshu/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+(/home/himanshu/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/home/himanshu/.miktex/texmfs/install/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/home/himanshu/.miktex/texmfs/install/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/home/himanshu/.miktex/texmfs/install/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+
+(/home/himanshu/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
+(/home/himanshu/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/home/himanshu/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/home/himanshu/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/home/himanshu/.miktex/texmfs/install/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box26
+\beforetitleunit=\skip43
+\aftertitleunit=\skip44
+\ttl@plus=\dimen111
+\ttl@minus=\dimen112
+\ttl@toksa=\toks16
+\titlewidth=\dimen113
+\titlewidthlast=\dimen114
+\titlewidthfirst=\dimen115
+)
+(Bonus_CSD206_Himanshu_Sharma.aux)
+\openout1 = `Bonus_CSD206_Himanshu_Sharma.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/home/himanshu/.miktex/texmfs/install/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count91
+\scratchdimen=\dimen116
+\scratchbox=\box27
+\nofMPsegments=\count92
+\nofMParguments=\count93
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count94
+\MPscratchDim=\dimen117
+\MPnumerator=\count95
+\makeMPintoPDFobject=\count96
+\everyMPtoPDFconversion=\toks18
+)
+LaTeX Font Info:    Try loading font information for OT1+qag on input line 18.
+ (/home/himanshu/.miktex/texmfs/install/tex/latex/tex-gyre/ot1qag.fd
+File: ot1qag.fd 2009/09/25 v1.2 font definition file for OT1/qag
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 19.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 20.
+
+
+(/home/himanshu/.miktex/texmfs/install/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+(Bonus_CSD206_Himanshu_Sharma.toc
+LaTeX Font Info:    Font shape `OT1/qag/bx/n' in size <10> not available
+(Font)              Font shape `OT1/qag/b/n' tried instead on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `Bonus_CSD206_Himanshu_Sharma.toc'.
+
+ [1
+
+{/home/himanshu/.miktex/texmfs/data/pdftex/config/pdftex.map}] [2]
+Overfull \hbox (4.04872pt too wide) in paragraph at lines 53--54
+[]\OT1/qag/b/n/10 oac \OT1/qag/m/n/10 - Operand Address Calculation - Find the 
+location of operand from the memory, if required. 
+ []
+
+[3] [4] [5] (Bonus_CSD206_Himanshu_Sharma.aux) ) 
+Here is how much of TeX's memory you used:
+ 2058 strings out of 494891
+ 27464 string characters out of 3178494
+ 96813 words of memory out of 3000000
+ 5699 multiletter control sequences out of 15000+200000
+ 21921 words of font info for 36 fonts, out of 3000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 24i,6n,35p,1791b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/home/himanshu/.miktex/texmfs/
+install/fonts/enc/dvips/tex-gyre/q-rm.enc}{/home/himanshu/.miktex/texmfs/instal
+l/fonts/enc/dvips/lm/lm-rmtt.enc}</home/himanshu/.miktex/texmfs/install/fonts/t
+ype1/public/amsfonts/cm/cmbx10.pfb></home/himanshu/.miktex/texmfs/install/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb></home/himanshu/.miktex/texmfs/install/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></home/himanshu/.miktex/texmfs/install/f
+onts/type1/public/amsfonts/cm/cmmi7.pfb></home/himanshu/.miktex/texmfs/install/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></home/himanshu/.miktex/texmfs/install
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/himanshu/.miktex/texmfs/insta
+ll/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/himanshu/.miktex/texmfs/inst
+all/fonts/type1/public/amsfonts/cm/cmtt12.pfb></home/himanshu/.miktex/texmfs/in
+stall/fonts/type1/public/lm/lmtt12.pfb></home/himanshu/.miktex/texmfs/install/f
+onts/type1/public/tex-gyre/qagb.pfb></home/himanshu/.miktex/texmfs/install/font
+s/type1/public/tex-gyre/qagr.pfb></home/himanshu/.miktex/texmfs/install/fonts/t
+ype1/public/tex-gyre/qagri.pfb>
+Output written on Bonus_CSD206_Himanshu_Sharma.pdf (5 pages, 228392 bytes).
+PDF statistics:
+ 68 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
