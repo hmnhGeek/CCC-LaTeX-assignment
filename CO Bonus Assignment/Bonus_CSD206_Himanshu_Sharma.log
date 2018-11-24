@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.9.3)  23 NOV 2018 19:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.9.3)  24 NOV 2018 21:43
 entering extended mode
 **./Bonus_CSD206_Himanshu_Sharma.tex
 (Bonus_CSD206_Himanshu_Sharma.tex
@@ -72,6 +72,9 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
+(/home/himanshu/.miktex/texmfs/install/tex/latex/fourier/fourier-orns.sty
+Package: fourier-orns 2004/01/30 1.1 fourier-ornaments package
+)
 (/home/himanshu/.miktex/texmfs/install/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box26
@@ -87,18 +90,18 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 (Bonus_CSD206_Himanshu_Sharma.aux)
 \openout1 = `Bonus_CSD206_Himanshu_Sharma.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -148,17 +151,17 @@ LaTeX Font Info:    ... okay on input line 16.
 \makeMPintoPDFobject=\count96
 \everyMPtoPDFconversion=\toks18
 )
-LaTeX Font Info:    Try loading font information for OT1+qag on input line 18.
+LaTeX Font Info:    Try loading font information for OT1+qag on input line 19.
  (/home/himanshu/.miktex/texmfs/install/tex/latex/tex-gyre/ot1qag.fd
 File: ot1qag.fd 2009/09/25 v1.2 font definition file for OT1/qag
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 19.
+(Font)              <12> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 19.
+(Font)              <8> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 19.
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 20.
+(Font)              <6> on input line 20.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 21.
 
 
 (/home/himanshu/.miktex/texmfs/install/tex/latex/lm/ot1lmtt.fd
@@ -178,38 +181,83 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/home/himanshu/.miktex/texmfs/data/pdftex/config/pdftex.map}] [2]
-Overfull \hbox (4.04872pt too wide) in paragraph at lines 53--54
+Overfull \hbox (4.04872pt too wide) in paragraph at lines 54--55
 []\OT1/qag/b/n/10 oac \OT1/qag/m/n/10 - Operand Address Calculation - Find the 
 location of operand from the memory, if required. 
  []
 
-[3] [4] [5] (Bonus_CSD206_Himanshu_Sharma.aux) ) 
+[3] [4] [5]
+Overfull \hbox (24.18456pt too wide) in paragraph at lines 127--130
+\OT1/qag/m/n/10 decision on a branch prediction and therefore brings instructio
+ns into the pipeline that must subsequently
+ []
+
+
+Overfull \hbox (29.38799pt too wide) in paragraph at lines 131--132
+[]\OT1/qag/m/n/10 Instruction pipelining is an important concept in the study o
+f microprocessors. Study of microprocessors
+ []
+
+[6] [7]
+Overfull \hbox (6.64775pt too wide) in paragraph at lines 171--172
+\OT1/qag/m/n/10 CPU. In computer system, there are special hardware components 
+between the CPU and peripherals
+ []
+
+
+Overfull \hbox (7.41792pt too wide) in paragraph at lines 171--172
+\OT1/qag/m/n/10 to control or manage the input-output transfers. These componen
+ts are called input-output interface
+ []
+
+
+Overfull \hbox (1.3861pt too wide) in paragraph at lines 175--176
+\OT1/qag/m/n/10 transfer to and from CPU and peripheral. Transferring data unde
+r programmed I/O requires constant
+ []
+
+[8]
+Overfull \hbox (2.72038pt too wide) in paragraph at lines 196--197
+\OT1/qag/m/n/10 whereas SRAM is digital. Capacitor charge leak was also describ
+ed in brief. These memory elements
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+futs on input line 205.
+(/home/himanshu/.miktex/texmfs/install/tex/latex/fourier/ufuts.fd
+File: ufuts.fd 2004/03/26 Fontinst v1.926 font definitions for U/futs.
+) [9]
+(Bonus_CSD206_Himanshu_Sharma.aux) ) 
 Here is how much of TeX's memory you used:
- 2058 strings out of 494891
- 27464 string characters out of 3178494
- 96813 words of memory out of 3000000
- 5699 multiletter control sequences out of 15000+200000
- 21921 words of font info for 36 fonts, out of 3000000 for 9000
+ 2130 strings out of 494891
+ 28635 string characters out of 3178494
+ 97109 words of memory out of 3000000
+ 5761 multiletter control sequences out of 15000+200000
+ 22244 words of font info for 39 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  24i,6n,35p,1791b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/home/himanshu/.miktex/texmfs/
-install/fonts/enc/dvips/tex-gyre/q-rm.enc}{/home/himanshu/.miktex/texmfs/instal
-l/fonts/enc/dvips/lm/lm-rmtt.enc}</home/himanshu/.miktex/texmfs/install/fonts/t
-ype1/public/amsfonts/cm/cmbx10.pfb></home/himanshu/.miktex/texmfs/install/fonts
-/type1/public/amsfonts/cm/cmbx12.pfb></home/himanshu/.miktex/texmfs/install/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb></home/himanshu/.miktex/texmfs/install/f
-onts/type1/public/amsfonts/cm/cmmi7.pfb></home/himanshu/.miktex/texmfs/install/
-fonts/type1/public/amsfonts/cm/cmr10.pfb></home/himanshu/.miktex/texmfs/install
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/himanshu/.miktex/texmfs/insta
-ll/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/himanshu/.miktex/texmfs/inst
-all/fonts/type1/public/amsfonts/cm/cmtt12.pfb></home/himanshu/.miktex/texmfs/in
-stall/fonts/type1/public/lm/lmtt12.pfb></home/himanshu/.miktex/texmfs/install/f
-onts/type1/public/tex-gyre/qagb.pfb></home/himanshu/.miktex/texmfs/install/font
-s/type1/public/tex-gyre/qagr.pfb></home/himanshu/.miktex/texmfs/install/fonts/t
-ype1/public/tex-gyre/qagri.pfb>
-Output written on Bonus_CSD206_Himanshu_Sharma.pdf (5 pages, 228392 bytes).
+{/home/himanshu/.miktex/texmfs/install/font
+s/enc/dvips/tex-gyre/q-rm.enc}{/home/himanshu/.miktex/texmfs/install/fonts/enc/
+dvips/lm/lm-rmtt.enc}</home/himanshu/.miktex/texmfs/install/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb></home/himanshu/.miktex/texmfs/install/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></home/himanshu/.miktex/texmfs/install/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></home/himanshu/.miktex/texmfs/install/fonts/type1/p
+ublic/amsfonts/cm/cmmi7.pfb></home/himanshu/.miktex/texmfs/install/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></home/himanshu/.miktex/texmfs/install/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb></home/himanshu/.miktex/texmfs/install/fonts/type
+1/public/amsfonts/cm/cmtt12.pfb></home/himanshu/.miktex/texmfs/install/fonts/ty
+pe1/public/fourier/fourier-orns.pfb></home/himanshu/.miktex/texmfs/install/font
+s/type1/public/lm/lmtt12.pfb></home/himanshu/.miktex/texmfs/install/fonts/type1
+/public/tex-gyre/qagb.pfb></home/himanshu/.miktex/texmfs/install/fonts/type1/pu
+blic/tex-gyre/qagr.pfb></home/himanshu/.miktex/texmfs/install/fonts/type1/publi
+c/tex-gyre/qagri.pfb>
+Output written on Bonus_CSD206_Himanshu_Sharma.pdf (9 pages, 240867 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 82 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

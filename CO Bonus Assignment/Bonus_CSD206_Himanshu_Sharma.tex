@@ -5,6 +5,7 @@
 
 \usepackage[margin=1in]{geometry}
 \usepackage{xcolor}
+\usepackage{fourier-orns}
 
 \definecolor{MyBlue}{rgb}{0.1,0.1,1}
 \definecolor{lightBlue}{rgb}{0, 0.5, 1}
@@ -80,7 +81,7 @@ As the name suggests, the semiconductor main memory is the memory made up of sem
 \subsubsection{The Dynamic RAM (DRAM)}
 The dynamic RAM is made up of electonic devices like capacitors (mainly) and capacitors which are governed by the laws of analog electronics have a tendency to leak charge with time given by the following equation,
 \begin{center}
-$\displaystyle q(t) = q_{o}(1-e^{-t/\tau})$
+$\displaystyle q(t) = q_{o}e^{-t/\tau}$
 \end{center}
 where, $\tau$ is the time constant measured in seconds. The word \textit{dynamic} used here refers to this decay of charge tendency in the capacitor. A high voltage is represented by logic 1, and a low voltage is represented by logic 0. Logic 1 takes in all the voltages above a threshold voltage and logic 0 takes in all the voltages into its consideration which have a value lower than the threshold voltage. Although we are storing 1 and 0, but DRAM is in itself an analog device because it uses capacitors.
 
@@ -98,5 +99,109 @@ A ROM is an essential part of the computer system because it contains that type 
 
 \section{The CPU}
 The CPU is that popular part of any computer system that enables it to actually work. When we say how a computer works, we are unconsciously thinking of CPU itself only. The CPU functions by executing machine instructions.
+
+\subsection{Indirect Cycle}
+An indirect cycle occurs when the addressing mode is not direct. At the time of instruction fetch, the instruction field is checked if there is any indirect addressing in the field. If there is any indirect addressing, the correct procedure is followed and finally the address of the instruction is loaded.
+
+\subsection{Data Flow}
+During the fetch cycle, an instruction is read from memory. The PC contains the address of the next instruction to be fetched. This address is moved to the MAR and placed on the address bus. The control unit requests a memory read, and the result is placed on the data bus and copied into the MBR and then moved to the IR. Meanwhile, the PC is incremented by 1, preparatory for the next fetch. After the fetch cycle is over, th instruction register is referenced to seek the operand. If the operand address could be obtained by indirect addressing, then that is performed. \par The fetch and indirect cycles are simple and predictable. The execute cycle takes many forms; the form depends on which of the various machine instructions is in the IR. This cycle may involve transferring data among registers, read or write from memory or I/O, and/or the invocation of the ALU. An idle processor is a waste of money and power. Utilizing every second is important when dealing with a computer system. Therefore, a new term called \textbf{instruction pipelining} is introduced.
+
+\subsection{Instruction Pipelining}
+Let me give an analogy of pipelining. When inside a manufacturing plant, different stages of the factory work at different levels. Let us take an example of automobile manufacturing industry. Stage $i$ of the company might be designing the frame of the car and stage $j$ may then white wash it. In the meantime, stage $i$ will not stay idle and will start working on the next car frame. This is the essence of pipelining. Similar things happen in microprocessors. They don't sit idle. You can think of microprocessor as a stage which does not remain idle even after its work is over. It hires the next incoming task. This way a computer's processor saves time. 
+
+There are six stages in an instruction pipeline.
+\begin{enumerate}
+\item \textbf{FI} - Fetch Instruction
+\item \textbf{DI} - Decode Instruction
+\item \textbf{CO} - Calculate Opearands
+\item \textbf{FO} - Fetch Operands
+\item \textbf{EI} - Execute Instruction
+\item \textbf{WO} - Write Operand
+\end{enumerate}
+There can be a case that an execute instruction evaluates to a branch instruction and then the pipeline hazards start to occur. These resource hazards include,
+\subsubsection{Resource Hazard}
+A resource hazard occur when two or more instructions on the same pipeline content for the same resource.
+\subsubsection{Data Hazard}
+When there is a conflict in the location of data in the pipeline, a data hazard occurs.
+\subsubsection{Control Hazard}
+A control hazard, also known as a branch hazard, occurs
+when the pipeline makes the wrong decision on a branch prediction and therefore
+brings instructions into the pipeline that must subsequently be discarded.
+
+Instruction pipelining is an important concept in the study of microprocessors. Study of microprocessors is important because it tells us how the computer's brain work.
+
+\newpage
+\section{The Control Unit}
+With so many things working in a computer together, some master is needed who will take control of what's happening in the system and that's where a control unit comes. Instructions are executed using micro-operations like fetch, indirect and execute. The control unit outputs signals to the processor which actually controls the operations. It makes the data to move from one register to another register and activates specific ALU operations. The input to the control units include inputs from instruction register that contains the opcode of the instruction, flag inputs which determine the state of the CPU after previous executions and the control signals from the control bus.
+
+ A control unit (CU) (or controller, same thing) is a piece of hardware that manages the activities of peripherals (separate devices attached to the computer, such as monitors, hard drives, printers, etc.) Control units found on personal computers are usually contained on a single printed circuit board. The control unit acts as a sort of "go-between," executing transfers of information between the computer's memory and the peripheral. Although the CPU (central processing unit-the "big boss" in the computer) gives instructions to the controller, it is the control unit itself that performs the actual physical transfer of data.
+ The control unit fetches one or more new instructions from memory (or an instruction cache), decodes them and dispatches them to the appropriate functional units to be executed. The control unit is also responsible for setting the latches in various data paths that ensure that the instructions are performed on the correct operand values stored in the registers.
+ In a CISC processor, the control unit is a small processor in its own right that executes microcode programs stored in a region of rom that prescribe the correct sequence of latches and data transfers for each type of macroinstruction. A RISC processor does away with microcode and most of the complexity in the control unit, which is left with little more to do than decode the instructions and turn on the appropriate functional units.
+
+\subsection{The Fetch Cycle}
+The fetch cycle of a control unit include 4 registers.
+\begin{enumerate}
+\item Memory Address Register - Connected to the address bus.
+\item Memory Buffer Register - Connected to the data bus.
+\item Program Counter - Holds the address for the next instruction to be fetched.
+\item Instruction Register - Holds last instruction fetched.
+\end{enumerate}
+Address from the PC is transferred to data bus and then it is copied to the MBR. After that, data is moved from MBR to IR and MBR is now free for further data fetches.
+
+\subsection{Functions of control Unit}
+
+\begin{enumerate}
+\item Regulate transfers of information between memory and I/O.
+ Fetches and decodes instructions from microprograms.
+
+\item Responsible for correct instruction execution between a processor's many sub-units.
+
+\item Control unit converts received information into sequence of control signals, and transfer to computer processor.
+
+\item It controls data flow inside the computer processor.
+\end{enumerate}
+
+\newpage
+\section{The Input/Output}
+The devices which are used to input the data and the programs in the computer are known as "Input Devices". or  Input device can read data and convert them to a form that a computer can use. Output Device can produce the final product of machine processing into a form usable by humans. It provides man to machine communication. Peripherals connected to a computer need special communication links for interfacing with CPU.  	
+
+\subsection{I/O Interface}
+Interface is a shared boundary btween two separate components of the computer system which can be used to attach two or more components to the system for communication purposes. \par
+
+Peripherals connected to a computer need special communication links for interfacing with CPU. In computer system, there are special hardware components between the CPU and peripherals to control or manage the input-output transfers. These components are called input-output interface units because they provide communication links between processor bus and peripherals. They provide a method for transferring information between internal system and input-output devices.
+
+\subsection{I/O Transfer Modes}
+\subsubsection{Programmed I/O}
+Programmed I/O instructions are the result of I/O instructions written in computer program. Each data item transfer is initiated by the instruction in the program. Usually the program controls data transfer to and from CPU and peripheral. Transferring data under programmed I/O requires constant monitoring of the peripherals by the CPU.
+
+\subsubsection{Interrupt Driven I/O}
+n the programmed I/O method the CPU stays in the program loop until the I/O unit indicates that it is ready for data transfer. This is time consuming process because it keeps the processor busy needlessly. This problem can be overcome by using interrupt initiated I/O. In this when the interface determines that the peripheral is ready for data transfer, it generates an interrupt. After receiving the interrupt signal, the CPU stops the task which it is processing and service the I/O transfer and then returns back to its previous processing task.
+
+\subsubsection{Direct Memory Access}
+Removing the CPU from the path and letting the peripheral device manage the memory buses directly would improve the speed of transfer. This technique is known as DMA. In this, the interface transfer data to and from the memory through memory bus. A DMA controller manages to transfer data between peripherals and memory unit.
+
+\par Many hardware systems use DMA such as disk drive controllers, graphic cards, network cards and sound cards etc. It is also used for intra chip data transfer in multicore processors. In DMA, CPU would initiate the transfer, do other operations while the transfer is in progress and receive an interrupt from the DMA controller when the transfer has been completed.
+
+\newpage
+\section{Conclusion}
+A computer system is a wonderful machine. No one could have ever imagined that human race could have built something like this in the early 1900s, a machine that could perform complex task in the blink of an eye. As we discussed above, a computer system is made up of;
+
+\begin{enumerate}
+	\item Memory
+	\item Processor
+	\item Control Unit
+	\item I/O interface
+\end{enumerate}
+
+Within memory, we saw how different kinds of memories are there, and here we have only discussed about cache and the internal memory and not the external memory. We discussed about cache blocks and DRAM and SRAM concepts and why DRAM is an analog memory device whereas SRAM is digital. Capacitor charge leak was also described in brief. These memory elements make a computer work efficiently because they store dynamic data when the computer is running, like, when you play games on computer, temporary information is stored in RAM. We also discussed about ROM and how it is useful for storing computer information which might be required for, say, booting up the system, etc.
+\par In CPU, we discussed how an idle processor is a waste of resources and how a computer keeps its proccessor continuously busy by using pipelining. We also saw about indirect cycle and how data flow occurs inside a CPU. 
+\par Then we discussed about the control unit and how it manages the control of the system and finally we ended this article by discussing about the I/O devices which actually give meaning to a computer because if they are not there, then there is no means to interact with that dumb machine.
+
+\section{References}
+Computer Organisation and Architecture, William Stallings, 9th Edition
+\\
+
+\centering
+\decothreeleft\decothreeright\decothreeleft\decothreeright\decothreeleft\decothreeright
 
 \end{document}
